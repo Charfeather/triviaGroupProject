@@ -1,0 +1,64 @@
+{
+    "questions":[
+        {
+            "class":"videoGames",
+            "question 1":"Who was the main character of Mass Effect?",
+            "correctAnswer":"Commander Shepard",
+            "wrongAnswer1":"Commander Sheepherder",
+            "wrongAnswer2":"Master Cheif",
+            "wrongAnswer3":"Private Simmons",
+            "id":"1",
+            "image":""
+        },
+        {
+            "class":"videoGames",
+            "question 1":"What console pioneered online console gaming?",
+            "correctAnswer":"Xbox",
+            "wrongAnswer1":"Playstation",
+            "wrongAnswer2":"Microsoft",
+            "wrongAnswer3":"Sont",
+            "id":"2",
+            "image":""
+        }, 
+        {
+            "class":"popCulture",
+            "question 1":"What is the name of the McDonalds burger that uses the McDonalds special sauce?",
+            "correctAnswer":"Big Mac",
+            "wrongAnswer1":"Big Max",
+            "wrongAnswer2":"Big Burger",
+            "wrongAnswer3":"Mickey D",
+            "id":"3",
+            "image":""
+        },
+        {
+            "class":"popCulture",
+            "question 1":"What is the name of SpongeBob's best friend?",
+            "correctAnswer":"Patrick",
+            "wrongAnswer1":"Patwock",
+            "wrongAnswer2":"The Notorious P.A.T",
+            "wrongAnswer3":"Pattoms",
+            "id":"4",
+            "image":""
+        },
+        {
+            "class":"movies",
+            "question 1":"Who was the lead actor in Inception?",
+            "correctAnswer":"Leonardo Di Caprio",
+            "wrongAnswer1":"Samuel L Jackson",
+            "wrongAnswer2":"Tom Cruise",
+            "wrongAnswer3":"David Dobrik",
+            "id":"5",
+            "image":""
+        },
+        {
+            "class":"movies",
+            "question 1":"Who was Jack Skelington's love interest in The Nightmare Before Christmas?",
+            "correctAnswer":"Sally",
+            "wrongAnswer1":"Oogie Boogie",
+            "wrongAnswer2":"Dr.Finkelstein",
+            "wrongAnswer3":"Barrel",
+            "id":"6",
+            "image":""
+        }
+    ]
+}
