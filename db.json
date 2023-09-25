@@ -8,7 +8,7 @@
             "wrongAnswer2":"Master Cheif",
             "wrongAnswer3":"Private Simmons",
             "id":"1",
-            "image":""
+            "image":"noneyet"
         },
         {
             "class":"videoGames",
@@ -16,7 +16,7 @@
             "correctAnswer":"Xbox",
             "wrongAnswer1":"Playstation",
             "wrongAnswer2":"Microsoft",
-            "wrongAnswer3":"Sont",
+            "wrongAnswer3":"Sony",
             "id":"2",
             "image":""
         }, 
