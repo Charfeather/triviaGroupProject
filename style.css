@@ -187,6 +187,10 @@ input:-webkit-autofill:focus {
     letter-spacing: 1px;
 }
 
+#progress-div {
+    text-align: center;
+}
+
 
 
 
