@@ -2,7 +2,7 @@
     "questions":[
         {
             "class":"videoGames",
-            "question 1":"Who was the main character of Mass Effect?",
+            "question1":"Who was the main character of Mass Effect?",
             "correctAnswer":"Commander Shepard",
             "wrongAnswer1":"Commander Sheepherder",
             "wrongAnswer2":"Master Cheif",
@@ -12,7 +12,7 @@
         },
         {
             "class":"videoGames",
-            "question 1":"What console pioneered online console gaming?",
+            "question1":"What console pioneered online console gaming?",
             "correctAnswer":"Xbox",
             "wrongAnswer1":"Playstation",
             "wrongAnswer2":"Microsoft",
@@ -22,7 +22,7 @@
         }, 
         {
             "class":"popCulture",
-            "question 1":"What is the name of the McDonalds burger that uses the McDonalds special sauce?",
+            "question1":"What is the name of the McDonalds burger that uses the McDonalds special sauce?",
             "correctAnswer":"Big Mac",
             "wrongAnswer1":"Big Max",
             "wrongAnswer2":"Big Burger",
@@ -32,7 +32,7 @@
         },
         {
             "class":"popCulture",
-            "question 1":"What is the name of SpongeBob's best friend?",
+            "question1":"What is the name of SpongeBob's best friend?",
             "correctAnswer":"Patrick",
             "wrongAnswer1":"Patwock",
             "wrongAnswer2":"The Notorious P.A.T",
@@ -42,7 +42,7 @@
         },
         {
             "class":"movies",
-            "question 1":"Who was the lead actor in Inception?",
+            "question1":"Who was the lead actor in Inception?",
             "correctAnswer":"Leonardo Di Caprio",
             "wrongAnswer1":"Samuel L Jackson",
             "wrongAnswer2":"Tom Cruise",
@@ -52,7 +52,7 @@
         },
         {
             "class":"movies",
-            "question 1":"Who was Jack Skelington's love interest in The Nightmare Before Christmas?",
+            "question1":"Who was Jack Skelington's love interest in The Nightmare Before Christmas?",
             "correctAnswer":"Sally",
             "wrongAnswer1":"Oogie Boogie",
             "wrongAnswer2":"Dr.Finkelstein",
