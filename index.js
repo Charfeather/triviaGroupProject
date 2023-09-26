@@ -13,8 +13,8 @@ response.json()
         questionId++
         const testQuestion="question"+questionId
         const questionsHTML=document.getElementById(`${testQuestion}`)
-        questionsHTML.querySelector('legend').innerText=dbQuestion.questions.question.innerText
-        console.log(questionsHTML)
+        questionsHTML.querySelector('legend').innerText=dbQuestion.question1
+        console.log(dbQuestion.question1)
       });
     })
 
