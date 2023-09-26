@@ -8,13 +8,13 @@
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&family=Rubik+Mono+One&family=Space+Mono&family=Unbounded:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Monoton&family=Modak&family=Playfair+Display:ital,wght@0,800;1,800&family=Poppins:wght@400&family=Heebo:wght@400&family=Roboto:ital,wght@1,400&display=swap" rel="stylesheet">
         <script defer src="index.js"></script>
     </head>
     <body>
         <div id="header">
-            <h1 id="title">Trivia Project</h1>
-            <h2 id="welcomeMessage">Welcome!</h2>
+            <h1 id="title">Trivia &nbsp Project</h1>
+            <h2 id="welcomeMessage">Welcome, Peyton!</h2>
         </div>
         <div class="signup">
             <h3>Member Signup:</h3>
@@ -22,7 +22,7 @@
                 <input id="username" type="text" placeholder="Username:">
                 <input id="email" type="email" placeholder="Email:">
                 <input id="password" type="password" placeholder="Password:">
-                <input id="signup-submit" type="submit">
+                <input class="button" id="signup-submit" type="submit">
             </form>
         </div>
         <div class="questions">
@@ -36,6 +36,9 @@
                         <input type="radio" name="q1" value=""><span>Answer 3</span>
                         <input type="radio" name="q1" value=""><span>Answer 4</span>
                     </fieldset>
+                    <br>
+                    <div class="hint">Hover for a hint</div>
+                    <div class="hidden">This will be the hint</div>
                 </div>
                 <div id="question2">
                     <h3>Question #2:</h3>
@@ -46,6 +49,9 @@
                         <input type="radio" name="q2" value=""><span>Answer 3</span>
                         <input type="radio" name="q2" value=""><span>Answer 4</span>
                     </fieldset>
+                    <br>
+                    <div class="hint">Hover for a hint</div>
+                    <div class="hidden">This will be the hint</div>
                 </div>
                 <div id="question3">
                     <h3>Question #3:</h3>
@@ -56,6 +62,9 @@
                         <input type="radio" name="q3" value=""><span>Answer 3</span>
                         <input type="radio" name="q3" value=""><span>Answer 4</span>
                     </fieldset>
+                    <br>
+                    <div class="hint">Hover for a hint</div>
+                    <div class="hidden">This will be the hint</div>
                 </div>
                 <div id="question4">
                     <h3>Question #4:</h3>
@@ -66,6 +75,9 @@
                         <input type="radio" name="q4" value=""><span>Answer 3</span>
                         <input type="radio" name="q4" value=""><span>Answer 4</span>
                     </fieldset>
+                    <br>
+                    <div class="hint">Hover for a hint</div>
+                    <div class="hidden">This will be the hint</div>
                 </div>
                 <div id="question5">
                     <h3>Question #5:</h3>
@@ -76,6 +88,9 @@
                         <input type="radio" name="q5" value=""><span>Answer 3</span>
                         <input type="radio" name="q5" value=""><span>Answer 4</span>
                     </fieldset>
+                    <br>
+                    <div class="hint">Hover for a hint</div>
+                    <div class="hidden">This will be the hint</div>
                 </div>
                 <div id="question6">
                     <h3>Question #6:</h3>
@@ -86,9 +101,15 @@
                         <input type="radio" name="q6" value=""><span>Answer 3</span>
                         <input type="radio" name="q6" value=""><span>Answer 4</span>
                     </fieldset>
+                    <br>
+                    <div class="hint">Hover for a hint</div>
+                    <div class="hidden">This will be the hint</div>
                 </div>
                 <br>
-                <input type="submit" id="trivia-submit" value="Check my results!">
+                <progress value="80" max="100">80%</progress>
+                <br>
+                <br>
+                <input class="button" type="submit" id="trivia-submit" value="Check my results!">
             </form>
         </div>
     </body>

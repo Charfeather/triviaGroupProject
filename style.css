@@ -5,7 +5,10 @@ body {
     background: powderblue;
     line-height: 1.5;
     position: relative;
-    color:#668ba4
+    color:#668ba4;
+    /* font-family: 'Bodoni Moda', serif; */
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
 }
 
 #header {
@@ -20,18 +23,19 @@ body {
     padding-bottom: 3rem;
     padding-left: -2rem;
     padding-right: -2rem;
-    font-size: 20px;
+    /* font-size: 20px; */
     border: 0em solid white;
     border-radius: 80px;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rubik Mono One', sans-serif;
+    
+    /* font-family: 'Rubik Mono One', sans-serif;
     font-family: 'Space Mono', monospace;
-    font-family: 'Unbounded', sans-serif;
+    font-family: 'Unbounded', sans-serif; */
 }
 
 #title {
-    color: #fde9ff;
-    font-weight: 600;
+    color: #ffedff;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: clamp(1rem, 10vw, 4rem);
     line-height: 0.75em;
@@ -40,4 +44,60 @@ body {
     6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
     6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
     9px 7px 1px #4af7ff;
+    margin-top: 2rem;
+    margin-bottom: .67rem;
+    letter-spacing: 1px;
 }
+
+#welcomeMessage {
+    color: white;
+    padding-top: 0em;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 46px;
+    margin-top: 0.8rem;
+    letter-spacing: .5px;
+    text-shadow: 1px 2px 2px #e5d5e5, 2px 3px 3px #e5d5e5;
+}
+
+.button {
+    cursor: pointer;
+    color: white;
+    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+    font-family: 'Playfair Display', serif;
+    height: 30px;
+    width: fit-content;
+    border: none;
+    box-shadow: inset;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* .hint{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.hint:hover + .hidden {
+    display: block;
+    color: red;
+} */
+
+
+/* Things to do for design
+change button appearances
+hover for hint
+body font and font size
+background image
+pointer cursor for buttons
+background gradients
+
+
+ */
