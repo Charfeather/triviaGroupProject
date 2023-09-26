@@ -16,16 +16,17 @@
             <h1 id="title">Trivia &nbsp Project</h1>
             <h2 id="welcomeMessage">Welcome, Peyton!</h2>
         </div>
-        <div class="signup">
+        <div id="signup-div">
             <h3>Member Signup:</h3>
-            <form id="signup-form"class="signup">
-                <input id="username" type="text" placeholder="Username:">
-                <input id="email" type="email" placeholder="Email:">
-                <input id="password" type="password" placeholder="Password:">
-                <input class="button" id="signup-submit" type="submit">
+            <form id="signup-form" class="signup">
+                <input class="signup-input" id="username" type="text" placeholder="Username" required>
+                <input class="signup-input" id="email" type="email" placeholder="Email" required>
+                <input class="signup-input"  id="password" type="password" placeholder="Password" required>
+                <input class="button" id="signup-submit-btn" type="submit" value="&nbsp Submit &nbsp">
             </form>
         </div>
         <div class="questions">
+            <h2></h2>
             <form id="trivia-form">
                 <div id="question1">
                     <h3>Question #1:</h3>
@@ -109,7 +110,7 @@
                 <progress value="80" max="100">80%</progress>
                 <br>
                 <br>
-                <input class="button" type="submit" id="trivia-submit" value="Check my results!">
+                <input class="button" type="submit" id="trivia-submit" value="&nbsp Check my results! &nbsp">
             </form>
         </div>
     </body>
