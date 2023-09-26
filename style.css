@@ -191,20 +191,26 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
+#progress-bar {
+    color: #95a4ff;
+    /* border: none; */
+}
 
 
 
 
-/* .hint{
+.hint{
     display: block;
+    text-align: center;
 }
 .hidden {
     display: none;
+    text-align: center;
 }
 .hint:hover + .hidden {
     display: block;
     color: red;
-} */
+}
 
 
 /* Things to do for design
