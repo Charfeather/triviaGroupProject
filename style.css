@@ -30,13 +30,11 @@ body {
 }
 
 #title {
-    /* order: 2; */
     color: #fde9ff;
     font-weight: 600;
     text-transform: uppercase;
     font-size: clamp(1rem, 10vw, 4rem);
     line-height: 0.75em;
-    /* text-align: center; */
     text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
     3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
     6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
