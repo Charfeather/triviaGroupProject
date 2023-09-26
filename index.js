@@ -1,12 +1,21 @@
 const welcomeMessage=document.getElementById('welcomeMessage')
 // console.log(fieldsets)
-const question= "http://127.0.0.1:3000/questions"
+const question= "http://localhost:3000/questions"
+//iterate by changing question id number and using that in a for Each
+let questionId=0
+const questions=document.getElementById(`${questionId}`)
 fetch(question)
-  .then((response)=>
-    response.json()
-    )
-    .then((data)=>console.log(data))
-
+.then((response)=>
+response.json()
+)
+.then((data)=>{
+  console.log(data)
+  data.forEach(id => {
+        questionId++
+        const testQuestion="question"+questionId
+        console.log(testQuestion)
+      });
+    })
 
 signupForm = document.getElementById('signup-form')
 console.log(signupForm)
@@ -17,7 +26,7 @@ signupForm.addEventListener('submit', (e) => {
     console.log(document.getElementById(email))
     console.log(document.getElementById(password))
     alert('signup complete!')
-    welcomeMessage.innerText=`Hello ${username}!`
+    welcomeMessage.innerText=`Hello, ${username}!`
     e.target.reset()
 })
 // const fieldsets = document.querySelectorAll(".fieldset")
