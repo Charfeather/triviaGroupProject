@@ -23,6 +23,8 @@ response.json()
         const questionAnswers4=document.getElementById(`q${questionId}A4`)
         questionAnswers4.innerText=dbQuestion.wrongAnswer3
         console.log(questionAnswers1)
+        const hint = document.getElementById(`q${dbQuestion.id}Hint-hidden`)
+        hint.innerText = dbQuestion.hint1
       });
     })
 
@@ -41,8 +43,31 @@ signupForm.addEventListener('submit', (e) => {
 const triviaSubmit = document.getElementById('trivia-submit-btn')
 triviaSubmit.addEventListener('click', e => {
   e.preventDefault()
-  alert('this worked')
+  confetti({
+    particleCount: 600,
+    spread: 90,
+    origin: { y: 0.6 },
+  });
+  function resetForm(){
+    input = document.getElementById('trivia-form')
+    input.reset()
+  }
+  resetForm()
+  function resetProgress(){
+    progressBar.value = 0
+  }
+  resetProgress()
+  // alert('this worked')
 })
+// triviaSubmit.addEventListener('submit', e => {
+//   e.preventDefault()
+//   const input = document.querySelectorAll('input')
+//   console.log(input)
+//   input.reset()
+//   console.log(e)
+//   console.log(e.target)
+//   // alert('this worked')
+// })
 
 //HINT HOVER
 const hintDivs = document.querySelectorAll('.hint')
