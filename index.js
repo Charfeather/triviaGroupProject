@@ -43,6 +43,48 @@ triviaSubmit.addEventListener('click', e => {
   e.preventDefault()
   alert('this worked')
 })
+
+
+//PROGRESS BAR
+const progressBar = document.getElementById('progress-bar')
+console.log(progressBar)
+const radioGroups = document.querySelectorAll('.radio-group')
+let clickedGroupCount = 0;
+// console.log(radioGroups)
+radioGroups.forEach((radioGroup) => {
+  console.log(radioGroups)
+  console.log(radioGroup)
+  const radioInputs = radioGroup.querySelectorAll('input[type="radio"]')
+  // console.log(radioInputs)
+  radioInputs.forEach((radioInput) => {
+    radioInput.addEventListener('change', (e) => {
+      if (clickedGroupCount < radioGroups.length){
+        progressBar.value++
+        clickedGroupCount++
+        console.log(progressBar.value)
+      }
+    })
+  })
+})
+
+// function updateProgressBar() {
+//   let current = progressBar.value
+//   console.log(current)
+//   const min = 0
+//   const max = progressBar.max
+//   console.log(max)
+//   // for btn in answerBtns {}
+//   // answerBtns.addEventListener('click', (e) => {
+//   //   console.log('hello!')
+//   })
+
+// }
+
+
+// 
+// 
+// 
+
 // const fieldsets = document.querySelectorAll(".fieldset")
 // const progressBar = document.querySelector('#progress-bar')
 // function progressBarFill(fieldset) {
