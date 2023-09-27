@@ -33,10 +33,9 @@ signupForm = document.getElementById('signup-form')
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const username = document.getElementById('username').value
-    console.log(username)
-    console.log(document.getElementById(email))
-    console.log(document.getElementById(password))
-    alert('signup complete!')
+    // console.log(username)
+    // console.log(document.getElementById(email))
+    // console.log(document.getElementById(password))
     welcomeMessage.innerText=`Welcome, ${username}!`
     e.target.reset()
 })
