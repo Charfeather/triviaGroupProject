@@ -27,7 +27,7 @@ response.json()
     })
 
 signupForm = document.getElementById('signup-form')
-console.log(signupForm)
+// console.log(signupForm)
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const username = document.getElementById('username').value
@@ -38,10 +38,72 @@ signupForm.addEventListener('submit', (e) => {
     welcomeMessage.innerText=`Welcome, ${username}!`
     e.target.reset()
 })
-const triviaSubmit = document.getElementById('trivia-submit')
+const triviaSubmit = document.getElementById('trivia-submit-btn')
 triviaSubmit.addEventListener('click', e => {
+  e.preventDefault()
   alert('this worked')
 })
+
+//HINT HOVER
+const hintDivs = document.querySelectorAll('.hint')
+const hiddenDivs = document.querySelectorAll('.hidden')
+hintDivs.forEach((hintDiv) => {
+  hintDiv.addEventListener('mouseover', (e) => {
+    hiddenDivs.forEach((hiddenDiv) => {
+      const matchingHintDiv = hintDiv.id
+      const matchingHiddenDiv = hiddenDiv.id.replace("-hidden", "")
+      if (matchingHintDiv === matchingHiddenDiv) {
+        hiddenDiv.style.display = "block"
+      }
+    })
+  })
+  hintDiv.addEventListener('mouseleave', (e) => {
+    hiddenDivs.forEach((hiddenDiv) => {
+      hiddenDiv.style.display = "none"
+    })
+  })
+})
+
+//PROGRESS BAR
+const progressBar = document.getElementById('progress-bar')
+// console.log(progressBar)
+const radioGroups = document.querySelectorAll('.radio-group')
+let clickedGroupCount = 0;
+// console.log(radioGroups)
+radioGroups.forEach((radioGroup) => {
+  // console.log(radioGroups)
+  // console.log(radioGroup)
+  const radioInputs = radioGroup.querySelectorAll('input[type="radio"]')
+  // console.log(radioInputs)
+  radioInputs.forEach((radioInput) => {
+    radioInput.addEventListener('change', (e) => {
+      if (clickedGroupCount < radioGroups.length){
+        progressBar.value++
+        clickedGroupCount++
+        console.log(progressBar.value)
+      }
+    })
+  })
+})
+
+// function updateProgressBar() {
+//   let current = progressBar.value
+//   console.log(current)
+//   const min = 0
+//   const max = progressBar.max
+//   console.log(max)
+//   // for btn in answerBtns {}
+//   // answerBtns.addEventListener('click', (e) => {
+//   //   console.log('hello!')
+//   })
+
+// }
+
+
+// 
+// 
+// 
+
 // const fieldsets = document.querySelectorAll(".fieldset")
 // const progressBar = document.querySelector('#progress-bar')
 // function progressBarFill(fieldset) {
