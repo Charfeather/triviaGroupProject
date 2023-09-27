@@ -6,7 +6,7 @@ body {
     line-height: 1.5;
     position: relative;
     color:#668ba4;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 h3 {
@@ -135,15 +135,17 @@ input:-webkit-autofill:focus {
 
 /* trivia section */
 .questions-container {
-    background: #fff;
+    background: #ffccaf;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
+    margin-top: 2.5rem;
     padding: 30px
 }
 #trivia-header {
-    color: #95a4ff;
+    color: #a4ff95;
+    background: #95a4ff;
     font-family: 'Monoton', cursive;
     font-weight: 400;
     font-size: 45px;
@@ -151,6 +153,7 @@ input:-webkit-autofill:focus {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0rem;
+    border: 5px solid #ff95a4;
 }
 
 #trivia-form {
@@ -186,6 +189,12 @@ input:-webkit-autofill:focus {
     border-radius: 8px;
     letter-spacing: 1px;
 }
+#trivia-submit-btn:hover {
+    color: #ffedff;
+    background: #165bfb;
+    border: 1px solid #668ba4;
+    box-shadow: 3px 3px 1px 1px #4af7ff, 3px 3px 1px 1px #668ba4;
+}
 
 #progress-div {
     text-align: center;
@@ -196,24 +205,70 @@ input:-webkit-autofill:focus {
     /* border: none; */
 }
 
-
-
 .hint-container{
     text-align: center;
 }
 
 .hint{
     display: inline-block;
-    text-align: center;
+    font-size: 22px;
+    /* font-family: 'Poppins', sans-serif; */
+    color: #62acff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: #a4ff95;
+     
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 10s;
 }
+.hint:after, .hint:before {
+    content: " ";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.hint:after{
+    top:-1px;
+    left: -1px;
+    border-top: 5px solid #ff95a4;
+    border-left: 5px solid #ff95a4;
+}  
+.hint:before{   
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #95a4ff;
+    border-right: 5px solid #95a4ff;
+}
+.hint:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+.hint:hover:before, .hint:hover:after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* .data-container {
+    background: #ffebee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+     
+
 .hidden {
+    margin-top: .75em;
     display: none;
     text-align: center;
-}
-/* .hint:hover + .hidden {
-    display: block;
     color: red;
-} */
+}
+
 
 
 /* Things to do for design
