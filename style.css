@@ -207,10 +207,10 @@ input:-webkit-autofill:focus {
     display: none;
     text-align: center;
 }
-.hint:hover + .hidden {
+/* .hint:hover + .hidden {
     display: block;
     color: red;
-}
+} */
 
 
 /* Things to do for design

@@ -47,13 +47,17 @@ triviaSubmit.addEventListener('click', e => {
 //HINT HOVER
 const hintDivs = document.querySelectorAll('.hint')
 console.log(hintDivs)
+const hiddenDivs = document.querySelectorAll('.hidden')
+console.log(hiddenDivs)
 hintDivs.forEach((hintDiv) => {
-  hint = hintDiv.innerText
+  hint = hintDiv
   hint.addEventListener('mouseover', (e) => {
     alert('hovered!')
+    for (hiddenDiv in hiddenDivs) => {
+      console.log(hiddenDiv)
+    }
   })
 })
-
 
 
 //PROGRESS BAR
