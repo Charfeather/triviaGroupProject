@@ -46,54 +46,23 @@ triviaSubmit.addEventListener('click', e => {
 
 //HINT HOVER
 const hintDivs = document.querySelectorAll('.hint')
-// console.log(hintDivs)
 const hiddenDivs = document.querySelectorAll('.hidden')
-// console.log(hiddenDivs)
 hintDivs.forEach((hintDiv) => {
-  console.log(hintDiv.id)
   hintDiv.addEventListener('mouseover', (e) => {
     hiddenDivs.forEach((hiddenDiv) => {
-      console.log(hiddenDiv.id)
-      // hiddenDiv.style.display = 'none'
       const matchingHintDiv = hintDiv.id
-      // const nonMatchingHiddenDiv = hiddenDiv.id
       const matchingHiddenDiv = hiddenDiv.id.replace("-hidden", "")
-      console.log(matchingHintDiv)
-      console.log(matchingHiddenDiv)
       if (matchingHintDiv === matchingHiddenDiv) {
         hiddenDiv.style.display = "block"
       }
     })
-    
-
-    
-    // if(matchingHiddenDiv === ()){
-    //   console.log(matchingHiddenDiv)
-    //   
-    // }
+  })
+  hintDiv.addEventListener('mouseleave', (e) => {
+    hiddenDivs.forEach((hiddenDiv) => {
+      hiddenDiv.style.display = "none"
+    })
   })
 })
-
-
-
-
-
-
-// hintDivs.forEach((hintDiv) => {
-//   hintDiv.addEventListener('mouseover', (e) => {
-//     // alert('hovered!')
-//     hiddenDivs.forEach ((hiddenDiv) => {
-//       console.log(hiddenDiv)
-//       if (hiddenDiv.class === hintDiv.class){
-//         hiddenDiv.style.display = "block"
-//       } 
-//       else{
-//         hiddenDiv.style.display = "none"
-//       }
-//     })
-//   })
-// })
-
 
 //PROGRESS BAR
 const progressBar = document.getElementById('progress-bar')
