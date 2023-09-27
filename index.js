@@ -38,8 +38,9 @@ signupForm.addEventListener('submit', (e) => {
     welcomeMessage.innerText=`Welcome, ${username}!`
     e.target.reset()
 })
-const triviaSubmit = document.getElementById('trivia-submit')
+const triviaSubmit = document.getElementById('trivia-submit-btn')
 triviaSubmit.addEventListener('click', e => {
+  e.preventDefault()
   alert('this worked')
 })
 // const fieldsets = document.querySelectorAll(".fieldset")
