@@ -27,7 +27,7 @@ response.json()
     })
 
 signupForm = document.getElementById('signup-form')
-console.log(signupForm)
+// console.log(signupForm)
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const username = document.getElementById('username').value
@@ -46,29 +46,64 @@ triviaSubmit.addEventListener('click', e => {
 
 //HINT HOVER
 const hintDivs = document.querySelectorAll('.hint')
-console.log(hintDivs)
+// console.log(hintDivs)
 const hiddenDivs = document.querySelectorAll('.hidden')
-console.log(hiddenDivs)
+// console.log(hiddenDivs)
 hintDivs.forEach((hintDiv) => {
-  hint = hintDiv
-  hint.addEventListener('mouseover', (e) => {
-    alert('hovered!')
-    for (hiddenDiv in hiddenDivs) => {
-      console.log(hiddenDiv)
-    }
+  console.log(hintDiv.id)
+  hintDiv.addEventListener('mouseover', (e) => {
+    hiddenDivs.forEach((hiddenDiv) => {
+      console.log(hiddenDiv.id)
+      // hiddenDiv.style.display = 'none'
+      const matchingHintDiv = hintDiv.id
+      // const nonMatchingHiddenDiv = hiddenDiv.id
+      const matchingHiddenDiv = hiddenDiv.id.replace("-hidden", "")
+      console.log(matchingHintDiv)
+      console.log(matchingHiddenDiv)
+      if (matchingHintDiv === matchingHiddenDiv) {
+        hiddenDiv.style.display = "block"
+      }
+    })
+    
+
+    
+    // if(matchingHiddenDiv === ()){
+    //   console.log(matchingHiddenDiv)
+    //   
+    // }
   })
 })
 
 
+
+
+
+
+// hintDivs.forEach((hintDiv) => {
+//   hintDiv.addEventListener('mouseover', (e) => {
+//     // alert('hovered!')
+//     hiddenDivs.forEach ((hiddenDiv) => {
+//       console.log(hiddenDiv)
+//       if (hiddenDiv.class === hintDiv.class){
+//         hiddenDiv.style.display = "block"
+//       } 
+//       else{
+//         hiddenDiv.style.display = "none"
+//       }
+//     })
+//   })
+// })
+
+
 //PROGRESS BAR
 const progressBar = document.getElementById('progress-bar')
-console.log(progressBar)
+// console.log(progressBar)
 const radioGroups = document.querySelectorAll('.radio-group')
 let clickedGroupCount = 0;
 // console.log(radioGroups)
 radioGroups.forEach((radioGroup) => {
-  console.log(radioGroups)
-  console.log(radioGroup)
+  // console.log(radioGroups)
+  // console.log(radioGroup)
   const radioInputs = radioGroup.querySelectorAll('input[type="radio"]')
   // console.log(radioInputs)
   radioInputs.forEach((radioInput) => {
