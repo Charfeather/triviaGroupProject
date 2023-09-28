@@ -57,6 +57,14 @@ triviaSubmit.addEventListener('click', e => {
   }
   resetProgress()
   // alert('this worked')
+  function snackbarAnswersCorrect() {
+    const snackbar = document.getElementById('snackbar')
+    snackbar.className = "show"
+    snackbar.innerText = "Your score is x/6! Thanks for playing!"
+    setTimeout(function(){ 
+      snackbar.className = snackbar.className.replace("show", "") }, 3000)
+  }
+  snackbarAnswersCorrect()    
 })
 // triviaSubmit.addEventListener('submit', e => {
 //   e.preventDefault()
