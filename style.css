@@ -278,13 +278,48 @@ input:-webkit-autofill:focus {
     height: 100%;
   }
   
-  /* .data-container {
-    background: #ffebee;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+  #snackbar-div {
+    text-align: center;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 300px;
+    margin-left: -175px;
+    margin-bottom: -10px;
+    height: 40px;
+    color: #fff;
+    background: #95a4ff ;
+    border: 2px solid #668ba4;
+    box-shadow: 8px 9px 1px #ffa580, 8px 9px 0px 2px #668ba4;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    
+}
+#snackbar.show {
+    visibility: visible;
+    --webkit-animation: fadein .5s, fadeout .5s 2.5s;
+    animation: fadein .5s, fadeout .5s 2.5s;
+}
+/* snackbar animation */
+  
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 20px; opacity: 1;}
+  }
+
+@keyframes fadeout {
+    from {bottom: 20px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
      
 
 .hidden {

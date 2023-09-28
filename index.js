@@ -60,7 +60,7 @@ triviaSubmit.addEventListener('click', e => {
   function snackbarAnswersCorrect() {
     const snackbar = document.getElementById('snackbar')
     snackbar.className = "show"
-    snackbar.innerText = "Your score is x/6! Thanks for playing!"
+    snackbar.innerText = "Thanks for playing!"
     setTimeout(function(){ 
       snackbar.className = snackbar.className.replace("show", "") }, 3000)
   }
