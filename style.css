@@ -2,13 +2,17 @@ body {
     margin: 30;
     padding: 30;
     padding-top: 0;
-    background: powderblue;
+    background-image:("https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_640.png");
+    background:linear-gradient(powderblue,#95a4ff,rgb(247, 198, 169));
     line-height: 1.5;
     position: relative;
     color:#668ba4;
     font-family: 'Heebo', sans-serif;
     font-size: 18px;
 }
+#grad {
+    background-image: linear-gradient(red, yellow);
+  }
 h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
