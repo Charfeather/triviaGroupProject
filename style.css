@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 0;
-    background-image:("https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_640.png");
-    /* background: rgba(247,198,169,1); */
-    background: linear-gradient(0deg, rgba(176,224,230,1) 0%, rgba(149,164,255,1) 57%, rgba(247,198,169,1) 100%);
+    /* background-image:url("https://img.freepik.com/premium-vector/cat-paw-print-vector-illustration-colored-animal-footprints-seamless-pattern-animal-paws_711179-80.jpg?w=826"); */
+    background: rgba(247,198,169,1);
+    background: linear-gradient(0deg, rgba(176,224,230,1) 0%, rgba(149,164,255,1) 57%, rgba(247,198,169,1) 100%), url(https://img.freepik.com/premium-vector/cat-paw-print-vector-illustration-colored-animal-footprints-seamless-pattern-animal-paws_711179-80.jpg?w=826);
+    background-blend-mode:screen;
     /* background:linear-gradient(powderblue,#95a4ff,rgb(247, 198, 169)); */
     line-height: 1.5;
     position: relative;
@@ -12,9 +13,8 @@ body {
     font-size: 18px;
     color: #668ba4
 }
-#bg-element {
-    background: rgba(176,224,230,1);
-    height: 100px;
+img {
+    position: relative;
 }
 /* #grad {
     background-image: linear-gradient(red, yellow);
@@ -166,6 +166,11 @@ input:-webkit-autofill:focus {
     border-right: 3px solid rgba(255, 165, 128);
     box-shadow: 12px 8px 1px 0px rgba(255, 165, 128, 1),22px 17px 3px 0px rgba(102, 139, 164, 1);
 }
+.fieldset{border-radius: 50px;
+    background: #ffc17c;
+    box-shadow:  20px 20px 13px #e3ac6e,
+                 -20px -20px 13px #ffd68a;
+}
 #trivia-header {
     color: #a4ff95;
     background: #95a4ff;
@@ -231,11 +236,10 @@ input:-webkit-autofill:focus {
     /* border: none; */
 }
 
-
-/* Hint hover */
 .hint-container{
     text-align: center;
 }
+
 .hint{
     display: inline-block;
     font-size: 22px;
@@ -245,6 +249,7 @@ input:-webkit-autofill:focus {
     position: relative;
     padding: 10px 20px;
     background: #a4ff95;
+     
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: all 10s;
@@ -277,56 +282,6 @@ input:-webkit-autofill:focus {
     width: 100%;
     height: 100%;
   }
-
-/* snackbar */
-#snackbar-div {
-    text-align: center;
-}
-
-#snackbar {
-    visibility: hidden;
-    min-width: 300px;
-    margin-left: -200px;
-    height: 40px;
-    background: #2a9d8f;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-right: 15px;
-    text-align: center;
-    border-radius: 10px;
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-}
-#snackbar.show {
-    visibility: visible;
-    --webkit-animation: fadein .5s, fadeout .5s 2.5s;
-    animation: fadein .5s, fadeout .5s 2.5s;
-}
-/* snackbar animation */
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 20px; opacity: 1;}
-  }
-  
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 20px; opacity: 1;}
-  }
-  
-@-webkit-keyframes fadeout {
-    from {bottom: 20px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
-  
-@keyframes fadeout {
-    from {bottom: 20px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
-
   
   /* .data-container {
     background: #ffebee;
