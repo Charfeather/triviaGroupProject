@@ -3,24 +3,28 @@ body {
     padding: 0;
     padding-top: 0;
     background-image:("https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_640.png");
-    background:linear-gradient(powderblue,#95a4ff,rgb(247, 198, 169));
+    background: rgba(247,198,169,1);
+    background: linear-gradient(0deg, rgba(176,224,230,1) 0%, rgba(149,164,255,1) 57%, rgba(247,198,169,1) 100%);
+    /* background:linear-gradient(powderblue,#95a4ff,rgb(247, 198, 169)); */
     line-height: 1.5;
     position: relative;
-    color:#668ba4;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    color: #668ba4
 }
-#grad {
+/* #grad {
     background-image: linear-gradient(red, yellow);
-  }
+  } */
 #content-container{
     margin: 30;
     padding: 30;
     padding-top: 0;
+    /* background: linear-gradient(0deg, rgba(149,164,255,1) 13%, rgba(247,198,169,1) 57%, rgba(176,224,230,1) 92%); */
 }
 h3 {
     font-family: 'Playfair Display', serif;
     color: #62acff;
+    text-shadow: 1px 2px 2px #f7ffe6;
     font-weight: 500;
     font-style: normal;
     font-size: 26px;
@@ -152,8 +156,11 @@ input:-webkit-autofill:focus {
     border-radius: 30px;
     margin-top: 2.5rem;
     padding: 50px;
-    box-shadow:  -10px 10px 28px #86aaaf,
-    10px -10px 28px #daffff;
+    border-top: 3px solid rgba(255, 165, 128);
+    border-bottom: 2px solid rgba(255, 165, 128);
+    border-left: 5px solid rgba(255, 165, 128);
+    border-right: 3px solid rgba(255, 165, 128);
+    box-shadow: 12px 8px 1px 0px rgba(255, 165, 128, 1),22px 17px 3px 0px rgba(102, 139, 164, 1);
 }
 #trivia-header {
     color: #a4ff95;
@@ -163,6 +170,7 @@ input:-webkit-autofill:focus {
     font-size: 45px;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 1px 2px 2px #2a9d8f, 2px 3px 3px #2a9d8f;
     margin-top: 1rem;
     margin-bottom: 0rem;
     border: 5px solid #ff95a4;
@@ -281,10 +289,12 @@ input:-webkit-autofill:focus {
 }
 
 svg {
+    /* background: #95a4ff; */
     position: absolute; 
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     width: 100%;
+    overflow: visible;
 }
 
 
