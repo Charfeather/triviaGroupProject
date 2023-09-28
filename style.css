@@ -1,6 +1,6 @@
 body {
-    margin: 30;
-    padding: 30;
+    margin: 0;
+    padding: 0;
     padding-top: 0;
     background: powderblue;
     line-height: 1.5;
@@ -9,17 +9,23 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
+#content-container{
+    margin: 30;
+    padding: 30;
+    padding-top: 0;
+}
 h3 {
     font-family: 'Playfair Display', serif;
+    color: #62acff;
     font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 /* header */
 #header {
     color: white;
-    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, #ffc17c 54.2%, rgb(21, 186, 196) 100.3%);
     background-size: contain;
     width: 100%;
     height: 20vh;
@@ -102,7 +108,7 @@ h3 {
     box-shadow: 3px 3px 1px 1px #4af7ff, 3px 3px 1px 1px #668ba4;
 }
 .signup-input {
-    font-family:'Heebo', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     line-height: 28px;
     color: #95a4ff;
@@ -135,13 +141,15 @@ input:-webkit-autofill:focus {
 
 /* trivia section */
 .questions-container {
-    background: #ffccaf;
+    background: #ffc17c;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 2.5rem;
-    padding: 30px
+    padding: 50px;
+    box-shadow:  -10px 10px 28px #86aaaf,
+    10px -10px 28px #daffff;
 }
 #trivia-header {
     color: #a4ff95;
@@ -176,8 +184,8 @@ input:-webkit-autofill:focus {
 #trivia-submit-btn {
     /* display: block; */
     cursor: pointer;
-    color: white;
-    background: #ffa580;
+    color: #ffa580;
+    background:  rgb(253, 239, 132);
     border: 1px solid #668ba4;
     box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 1px #668ba4;
     font-family: 'Playfair Display', serif;
@@ -212,7 +220,6 @@ input:-webkit-autofill:focus {
 .hint{
     display: inline-block;
     font-size: 22px;
-    /* font-family: 'Poppins', sans-serif; */
     color: #62acff;
     font-weight: bold;
     cursor: pointer;
@@ -269,11 +276,17 @@ input:-webkit-autofill:focus {
     color: red;
 }
 
+svg {
+    position: absolute; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
 
 /* Things to do for design
 DONE change signup section appearances
-hover for hint
+DONE hover for hint
 DONE body font and font size
 background image
 pointer cursor for buttons
