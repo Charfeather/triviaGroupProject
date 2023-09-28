@@ -166,11 +166,6 @@ input:-webkit-autofill:focus {
     border-right: 3px solid rgba(255, 165, 128);
     box-shadow: 12px 8px 1px 0px rgba(255, 165, 128, 1),22px 17px 3px 0px rgba(102, 139, 164, 1);
 }
-.fieldset{border-radius: 50px;
-    background: #ffc17c;
-    box-shadow:  20px 20px 13px #e3ac6e,
-                 -20px -20px 13px #ffd68a;
-}
 #trivia-header {
     color: #a4ff95;
     background: #95a4ff;
