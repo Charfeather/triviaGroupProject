@@ -14,7 +14,7 @@ body {
 }
 #bg-element {
     background: rgba(247,198,169,1);
-    height: 100px;
+    height: 200px;
 }
 /* #grad {
     background-image: linear-gradient(red, yellow);
@@ -203,15 +203,20 @@ input:-webkit-autofill:focus {
     color: #ffa580;
     background:  rgb(253, 239, 132);
     border: 1px solid #668ba4;
-    box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 1px #668ba4;
+    box-shadow: 
+    3px 3px 1px 1px #95a4ff, 
+    3px 3px 1px 1px #668ba4;
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 22px;
-    height: 35px;
+    font-size: 26px;
+    text-shadow: 
+    .5px .5px 0px #ff814d, 
+    .5px .5px 0px #ff9367;
+    height: 45px;
     width: fit-content;
     outline: none;
     border-radius: 8px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 #trivia-submit-btn:hover {
     color: #ffedff;
@@ -286,7 +291,7 @@ input:-webkit-autofill:focus {
     visibility: hidden;
     min-width: 300px;
     margin-left: -200px;
-    margin-bottom: 120px;
+    margin-bottom: 225px;
     height: 40px;
     color: #fff;
     background: #95a4ff ;

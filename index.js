@@ -14,7 +14,7 @@ response.json()
         const testQuestion="question"+questionId
         const questionsHTML=document.getElementById(`${testQuestion}`)
         questionsHTML.querySelector('legend').innerText=dbQuestion.question1
-        const questionAnswers1=document.getElementById(`q${questionId}A1`)
+        let questionAnswers1=document.getElementById(`q${questionId}A1`)
         questionAnswers1.innerText=dbQuestion.correctAnswer
         const questionAnswers2=document.getElementById(`q${questionId}A2`)
         questionAnswers2.innerText=dbQuestion.wrongAnswer1
@@ -27,7 +27,6 @@ response.json()
         hint.innerText = dbQuestion.hint1
       });
     })
-
 signupForm = document.getElementById('signup-form')
 // console.log(signupForm)
 signupForm.addEventListener('submit', (e) => {
@@ -39,6 +38,7 @@ signupForm.addEventListener('submit', (e) => {
     welcomeMessage.innerText=`Welcome, ${username}!`
     e.target.reset()
 })
+const correctAnswers = document.querySelectorAll('')
 const triviaSubmit = document.getElementById('trivia-submit-btn')
 triviaSubmit.addEventListener('click', e => {
   e.preventDefault()
