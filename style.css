@@ -1,29 +1,35 @@
 body {
-    margin: 30;
-    padding: 30;
+    margin: 0;
+    padding: 0;
     padding-top: 0;
     background-image:("https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_640.png");
     background:linear-gradient(powderblue,#95a4ff,rgb(247, 198, 169));
     line-height: 1.5;
     position: relative;
     color:#668ba4;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 #grad {
     background-image: linear-gradient(red, yellow);
   }
+#content-container{
+    margin: 30;
+    padding: 30;
+    padding-top: 0;
+}
 h3 {
     font-family: 'Playfair Display', serif;
+    color: #62acff;
     font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 /* header */
 #header {
     color: white;
-    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+    background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, #ffc17c 54.2%, rgb(21, 186, 196) 100.3%);
     background-size: contain;
     width: 100%;
     height: 20vh;
@@ -106,7 +112,7 @@ h3 {
     box-shadow: 3px 3px 1px 1px #4af7ff, 3px 3px 1px 1px #668ba4;
 }
 .signup-input {
-    font-family:'Heebo', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     line-height: 28px;
     color: #95a4ff;
@@ -139,15 +145,19 @@ input:-webkit-autofill:focus {
 
 /* trivia section */
 .questions-container {
-    background: #fff;
+    background: #ffc17c;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px
+    border-radius: 30px;
+    margin-top: 2.5rem;
+    padding: 50px;
+    box-shadow:  -10px 10px 28px #86aaaf,
+    10px -10px 28px #daffff;
 }
 #trivia-header {
-    color: #95a4ff;
+    color: #a4ff95;
+    background: #95a4ff;
     font-family: 'Monoton', cursive;
     font-weight: 400;
     font-size: 45px;
@@ -155,6 +165,7 @@ input:-webkit-autofill:focus {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0rem;
+    border: 5px solid #ff95a4;
 }
 
 #trivia-form {
@@ -177,8 +188,8 @@ input:-webkit-autofill:focus {
 #trivia-submit-btn {
     /* display: block; */
     cursor: pointer;
-    color: white;
-    background: #ffa580;
+    color: #ffa580;
+    background:  rgb(253, 239, 132);
     border: 1px solid #668ba4;
     box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 1px #668ba4;
     font-family: 'Playfair Display', serif;
@@ -190,6 +201,12 @@ input:-webkit-autofill:focus {
     border-radius: 8px;
     letter-spacing: 1px;
 }
+#trivia-submit-btn:hover {
+    color: #ffedff;
+    background: #165bfb;
+    border: 1px solid #668ba4;
+    box-shadow: 3px 3px 1px 1px #4af7ff, 3px 3px 1px 1px #668ba4;
+}
 
 #progress-div {
     text-align: center;
@@ -200,26 +217,80 @@ input:-webkit-autofill:focus {
     /* border: none; */
 }
 
-
-
+.hint-container{
+    text-align: center;
+}
 
 .hint{
-    display: block;
-    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    color: #62acff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: #a4ff95;
+     
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 10s;
 }
+.hint:after, .hint:before {
+    content: " ";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.hint:after{
+    top:-1px;
+    left: -1px;
+    border-top: 5px solid #ff95a4;
+    border-left: 5px solid #ff95a4;
+}  
+.hint:before{   
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #95a4ff;
+    border-right: 5px solid #95a4ff;
+}
+.hint:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+.hint:hover:before, .hint:hover:after {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* .data-container {
+    background: #ffebee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+     
+
 .hidden {
+    margin-top: .75em;
     display: none;
     text-align: center;
-}
-/* .hint:hover + .hidden {
-    display: block;
     color: red;
-} */
+}
+
+svg {
+    position: absolute; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
 
 /* Things to do for design
 DONE change signup section appearances
-hover for hint
+DONE hover for hint
 DONE body font and font size
 background image
 pointer cursor for buttons
