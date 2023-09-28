@@ -1,14 +1,13 @@
 const welcomeMessage=document.getElementById('welcomeMessage')
 // console.log(fieldsets)
 const questionDataBase= "http://localhost:3000/questions"
-//iterate by changing question id number and using that in a for Each
 let questionId=0
 fetch(questionDataBase)
 .then((response)=>
 response.json()
 )
 .then((data)=>{
-  console.log(data)
+  //console.log(data)
   data.forEach(dbQuestion => {
         questionId++
         const testQuestion="question"+questionId
@@ -22,7 +21,7 @@ response.json()
         questionAnswers3.innerText=dbQuestion.wrongAnswer2
         const questionAnswers4=document.getElementById(`q${questionId}A4`)
         questionAnswers4.innerText=dbQuestion.wrongAnswer3
-        console.log(questionAnswers1)
+        //console.log(questionAnswers1)
         const hint = document.getElementById(`q${dbQuestion.id}Hint-hidden`)
         hint.innerText = dbQuestion.hint1
       });
@@ -38,7 +37,6 @@ signupForm.addEventListener('submit', (e) => {
     welcomeMessage.innerText=`Welcome, ${username}!`
     e.target.reset()
 })
-// const correctAnswers = document.querySelectorAll('')
 const triviaSubmit = document.getElementById('trivia-submit-btn')
 triviaSubmit.addEventListener('click', e => {
   e.preventDefault()
@@ -56,7 +54,6 @@ triviaSubmit.addEventListener('click', e => {
     progressBar.value = 0
   }
   resetProgress()
-  // alert('this worked')
   function snackbarAnswersCorrect() {
     const snackbar = document.getElementById('snackbar')
     snackbar.className = "show"
@@ -66,15 +63,6 @@ triviaSubmit.addEventListener('click', e => {
   }
   snackbarAnswersCorrect()    
 })
-// triviaSubmit.addEventListener('submit', e => {
-//   e.preventDefault()
-//   const input = document.querySelectorAll('input')
-//   console.log(input)
-//   input.reset()
-//   console.log(e)
-//   console.log(e.target)
-//   // alert('this worked')
-// })
 
 //HINT HOVER
 const hintDivs = document.querySelectorAll('.hint')
@@ -117,35 +105,3 @@ radioGroups.forEach((radioGroup) => {
     })
   })
 })
-
-// function updateProgressBar() {
-//   let current = progressBar.value
-//   console.log(current)
-//   const min = 0
-//   const max = progressBar.max
-//   console.log(max)
-//   // for btn in answerBtns {}
-//   // answerBtns.addEventListener('click', (e) => {
-//   //   console.log('hello!')
-//   })
-
-// }
-
-
-// 
-// 
-// 
-
-// const fieldsets = document.querySelectorAll(".fieldset")
-// const progressBar = document.querySelector('#progress-bar')
-// function progressBarFill(fieldset) {
-//     for fieldset in fieldsets {
-//         let width = 0
-//         if fieldset radio checked{
-//             width++
-//             progressBar.style.width = width + '%'s
-//         }
-//     }
-// }
-
-

@@ -2,28 +2,19 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 0;
-    /* background-image:url("https://img.freepik.com/premium-vector/cat-paw-print-vector-illustration-colored-animal-footprints-seamless-pattern-animal-paws_711179-80.jpg?w=826"); */
     background: rgba(247,198,169,1);
     background: linear-gradient(0deg, rgba(176,224,230,1) 0%, rgba(149,164,255,1) 57%, rgba(247,198,169,1) 100%), url(https://img.freepik.com/premium-vector/cat-paw-print-vector-illustration-colored-animal-footprints-seamless-pattern-animal-paws_711179-80.jpg?w=826);
     background-blend-mode:screen;
-    /* background:linear-gradient(powderblue,#95a4ff,rgb(247, 198, 169)); */
     line-height: 1.5;
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #668ba4
 }
-/* img {
-    position: relative;
-} */
-/* #grad {
-    background-image: linear-gradient(red, yellow);
-  } */
 #content-container{
     margin: 30;
     padding: 30;
     padding-top: 0;
-    /* background: linear-gradient(0deg, rgba(149,164,255,1) 13%, rgba(247,198,169,1) 57%, rgba(176,224,230,1) 92%); */
 }
 h3 {
     font-family: 'Playfair Display', serif;
@@ -111,7 +102,6 @@ h3 {
     outline: none;
     border-radius: 8px;
     letter-spacing: 1px;
-    /* text-shadow: 1px 1px 1px #e5d5e5; */
 }
 #signup-submit-btn:hover {
     color: #ffedff;
@@ -182,7 +172,6 @@ input:-webkit-autofill:focus {
 
 #trivia-form {
     display: block;
-    /* text-align: center; */
 }
 
 .fieldset {
@@ -228,7 +217,6 @@ input:-webkit-autofill:focus {
     width: 200px;
     height: 50px;
     color: #95a4ff;
-    /* border: none; */
 }
 
 .hint-container{
@@ -330,22 +318,7 @@ input:-webkit-autofill:focus {
 }
 
 svg {
-    /* background: #95a4ff; */
     position: absolute; 
-    /* padding: 0;
-    margin: 0; */
     width: 100%;
     overflow: visible;
 }
-
-
-/* Things to do for design
-DONE change signup section appearances
-DONE hover for hint
-DONE body font and font size
-background image
-pointer cursor for buttons
-background gradients
-
-
- */
